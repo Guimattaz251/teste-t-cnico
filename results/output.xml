@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-28T15:35:29.667048" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\guilh\OneDrive\Área de Trabalho\Teste técnico\tests\login.robot">
+<kw name="Abrir o site" owner="suite_teardown" type="SETUP">
+<msg time="2024-03-28T15:35:29.934778" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-28T15:35:29.935804" level="TRACE">Arguments: [ 'https://opensource-demo.orangehrmlive.com/' | 'chrome' ]</msg>
+<msg time="2024-03-28T15:35:29.935804" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg time="2024-03-28T15:35:29.936915" level="DEBUG">Selenium Manager binary found at: C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe</msg>
+<msg time="2024-03-28T15:35:29.936915" level="DEBUG">Executing process: C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<msg time="2024-03-28T15:35:30.444661" level="WARN">The chromedriver version (121.0.6167.85) detected in PATH at C:\Users\guilh\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.60); currently, chromedriver 123.0.6312.86 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-28T15:35:30.445670" level="DEBUG">Driver path: C:\Users\guilh\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe</msg>
+<msg time="2024-03-28T15:35:30.445670" level="DEBUG">Browser path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</msg>
+<msg time="2024-03-28T15:35:30.445670" level="DEBUG">Using driver at: C:\Users\guilh\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe</msg>
+<msg time="2024-03-28T15:35:30.502582" level="DEBUG">Started executable: `C:\Users\guilh\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe` in a child process with pid: 25652 using 0 to output -3</msg>
+<msg time="2024-03-28T15:35:31.024806" level="DEBUG">POST http://localhost:63407/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"extensions": [], "binary": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "args": []}}}}</msg>
+<msg time="2024-03-28T15:35:31.026158" level="DEBUG">Starting new HTTP connection (1): localhost:63407</msg>
+<msg time="2024-03-28T15:35:31.803352" level="DEBUG">http://localhost:63407 "POST /session HTTP/1.1" 500 0</msg>
+<msg time="2024-03-28T15:35:31.803352" level="DEBUG">Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 121\nCurrent browser version is 123.0.6312.60 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe","stacktrace":"\tGetHandleVerifier [0x00007FF72B455E42+3538674]\n\t(No symbol) [0x00007FF72B074C02]\n\t(No symbol) [0x00007FF72AF25AEB]\n\t(No symbol) [0x00007FF72AF5C512]\n\t(No symbol) [0x00007FF72AF5B872]\n\t(No symbol) [0x00007FF72AF55106]\n\t(No symbol) [0x00007FF72AF521C8]\n\t(No symbol) [0x00007FF72AF994B9]\n\t(No symbol) [0x00007FF72AF8EE53]\n\t(No symbol) [0x00007FF72AF5F514]\n\t(No symbol) [0x00007FF72AF60631]\n\tGetHandleVerifier [0x00007FF72B486CAD+3738973]\n\tGetHandleVerifier [0x00007FF72B4DC506+4089270]\n\tGetHandleVerifier [0x00007FF72B4D4823+4057299]\n\tGetHandleVerifier [0x00007FF72B1A5C49+720121]\n\t(No symbol) [0x00007FF72B08126F]\n\t(No symbol) [0x00007FF72B07C304]\n\t(No symbol) [0x00007FF72B07C432]\n\t(No symbol) [0x00007FF72B06BD04]\n\tBaseThreadInitThunk [0x00007FF9E5D7257D+29]\n\tRtlUserThreadStart [0x00007FF9E7BCAA58+40]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1122', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-28T15:35:31.803352" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-28T15:35:33.997278" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-28T15:35:33.997278" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 121
+Current browser version is 123.0.6312.60 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF72B455E42+3538674]
+	(No symbol) [0x00007FF72B074C02]
+	(No symbol) [0x00007FF72AF25AEB]
+	(No symbol) [0x00007FF72AF5C512]
+	(No symbol) [0x00007FF72AF5B872]
+	(No symbol) [0x00007FF72AF55106]
+	(No symbol) [0x00007FF72AF521C8]
+	(No symbol) [0x00007FF72AF994B9]
+	(No symbol) [0x00007FF72AF8EE53]
+	(No symbol) [0x00007FF72AF5F514]
+	(No symbol) [0x00007FF72AF60631]
+	GetHandleVerifier [0x00007FF72B486CAD+3738973]
+	GetHandleVerifier [0x00007FF72B4DC506+4089270]
+	GetHandleVerifier [0x00007FF72B4D4823+4057299]
+	GetHandleVerifier [0x00007FF72B1A5C49+720121]
+	(No symbol) [0x00007FF72B08126F]
+	(No symbol) [0x00007FF72B07C304]
+	(No symbol) [0x00007FF72B07C432]
+	(No symbol) [0x00007FF72B06BD04]
+	BaseThreadInitThunk [0x00007FF9E5D7257D+29]
+	RtlUserThreadStart [0x00007FF9E7BCAA58+40]
+</msg>
+<msg time="2024-03-28T15:35:33.999883" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\SeleniumLibrary\__init__.py", line 518, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\robotlibcore.py", line 133, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 282, in open_browser
+    return self._make_new_browser(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 313, in _make_new_browser
+    driver = self._make_driver(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 767, in _make_driver
+    driver = self._webdriver_creator.create_driver(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\SeleniumLibrary\keywords\webdrivertools\webdrivertools.py", line 93, in create_driver
+    return creation_method(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\SeleniumLibrary\keywords\webdrivertools\webdrivertools.py", line 160, in create_chrome
+    return webdriver.Chrome(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 61, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 209, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 293, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 121
+Current browser version is 123.0.6312.60 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF72B455E42+3538674]
+	(No symbol) [0x00007FF72B074C02]
+	(No symbol) [0x00007FF72AF25AEB]
+	(No symbol) [0x00007FF72AF5C512]
+	(No symbol) [0x00007FF72AF5B872]
+	(No symbol) [0x00007FF72AF55106]
+	(No symbol) [0x00007FF72AF521C8]
+	(No symbol) [0x00007FF72AF994B9]
+	(No symbol) [0x00007FF72AF8EE53]
+	(No symbol) [0x00007FF72AF5F514]
+	(No symbol) [0x00007FF72AF60631]
+	GetHandleVerifier [0x00007FF72B486CAD+3738973]
+	GetHandleVerifier [0x00007FF72B4DC506+4089270]
+	GetHandleVerifier [0x00007FF72B4D4823+4057299]
+	GetHandleVerifier [0x00007FF72B1A5C49+720121]
+	(No symbol) [0x00007FF72B08126F]
+	(No symbol) [0x00007FF72B07C304]
+	(No symbol) [0x00007FF72B07C432]
+	(No symbol) [0x00007FF72B06BD04]
+	BaseThreadInitThunk [0x00007FF9E5D7257D+29]
+	RtlUserThreadStart [0x00007FF9E7BCAA58+40]</msg>
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-28T15:35:29.935804" elapsed="4.064079">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 121
+Current browser version is 123.0.6312.60 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF72B455E42+3538674]
+	(No symbol) [0x00007FF72B074C02]
+	(No symbol) [0x00007FF72AF25AEB]
+	(No symbol) [0x00007FF72AF5C512]
+	(No symbol) [0x00007FF72AF5B872]
+	(No symbol) [0x00007FF72AF55106]
+	(No symbol) [0x00007FF72AF521C8]
+	(No symbol) [0x00007FF72AF994B9]
+	(No symbol) [0x00007FF72AF8EE53]
+	(No symbol) [0x00007FF72AF5F514]
+	(No symbol) [0x00007FF72AF60631]
+	GetHandleVerifier [0x00007FF72B486CAD+3738973]
+	GetHandleVerifier [0x00007FF72B4DC506+4089270]
+	GetHandleVerifier [0x00007FF72B4D4823+4057299]
+	GetHandleVerifier [0x00007FF72B1A5C49+720121]
+	(No symbol) [0x00007FF72B08126F]
+	(No symbol) [0x00007FF72B07C304]
+	(No symbol) [0x00007FF72B07C432]
+	(No symbol) [0x00007FF72B06BD04]
+	BaseThreadInitThunk [0x00007FF9E5D7257D+29]
+	RtlUserThreadStart [0x00007FF9E7BCAA58+40]
+</status>
+</kw>
+<status status="FAIL" start="2024-03-28T15:35:29.934778" elapsed="4.066634">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 121
+Current browser version is 123.0.6312.60 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF72B455E42+3538674]
+	(No symbol) [0x00007FF72B074C02]
+	(No symbol) [0x00007FF72AF25AEB]
+	(No symbol) [0x00007FF72AF5C512]
+	(No symbol) [0x00007FF72AF5B872]
+	(No symbol) [0x00007FF72AF55106]
+	(No symbol) [0x00007FF72AF521C8]
+	(No symbol) [0x00007FF72AF994B9]
+	(No symbol) [0x00007FF72AF8EE53]
+	(No symbol) [0x00007FF72AF5F514]
+	(No symbol) [0x00007FF72AF60631]
+	GetHandleVerifier [0x00007FF72B486CAD+3738973]
+	GetHandleVerifier [0x00007FF72B4DC506+4089270]
+	GetHandleVerifier [0x00007FF72B4D4823+4057299]
+	GetHandleVerifier [0x00007FF72B1A5C49+720121]
+	(No symbol) [0x00007FF72B08126F]
+	(No symbol) [0x00007FF72B07C304]
+	(No symbol) [0x00007FF72B07C432]
+	(No symbol) [0x00007FF72B06BD04]
+	BaseThreadInitThunk [0x00007FF9E5D7257D+29]
+	RtlUserThreadStart [0x00007FF9E7BCAA58+40]
+</status>
+</kw>
+<test id="s1-t1" name="CT01 - Teste proposto" line="9">
+<status status="FAIL" start="2024-03-28T15:35:34.001412" elapsed="0.000000">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 121
+Current browser version is 123.0.6312.60 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF72B455E42+3538674]
+	(No symbol) [0x00007FF72B074C02]
+	(No symbol) [0x00007FF72AF25AEB]
+	(No symbol) [0x00007FF72AF5C512]
+	(No symbol) [0x00007FF72AF5B872]
+	(No symbol) [0x00007FF72AF55106]
+	(No symbol) [0x00007FF72AF521C8]
+	(No symbol) [0x00007FF72AF994B9]
+	(No symbol) [0x00007FF72AF8EE53]
+	(No symbol) [0x00007FF72AF5F514]
+	(No symbol) [0x00007FF72AF60631]
+	GetHandleVerifier [0x00007FF72B486CAD+3738973]
+	GetHandleVerifier [0x00007FF72B4DC506+4089270]
+	GetHandleVerifier [0x00007FF72B4D4823+4057299]
+	GetHandleVerifier [0x00007FF72B1A5C49+720121]
+	(No symbol) [0x00007FF72B08126F]
+	(No symbol) [0x00007FF72B07C304]
+	(No symbol) [0x00007FF72B07C432]
+	(No symbol) [0x00007FF72B06BD04]
+	BaseThreadInitThunk [0x00007FF9E5D7257D+29]
+	RtlUserThreadStart [0x00007FF9E7BCAA58+40]
+</status>
+</test>
+<kw name="Fechar o site" owner="suite_teardown" type="TEARDOWN">
+<msg time="2024-03-28T15:35:34.006055" level="TRACE">Arguments: [  ]</msg>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<msg time="2024-03-28T15:35:34.006055" level="TRACE">Arguments: [  ]</msg>
+<msg time="2024-03-28T15:35:34.006055" level="DEBUG">Closing all browsers.</msg>
+<msg time="2024-03-28T15:35:34.006055" level="TRACE">Return: None</msg>
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-03-28T15:35:34.006055" elapsed="0.000000"/>
+</kw>
+<msg time="2024-03-28T15:35:34.006055" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-03-28T15:35:34.006055" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-28T15:35:29.669392" elapsed="4.336663">Suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 121
+Current browser version is 123.0.6312.60 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF72B455E42+3538674]
+	(No symbol) [0x00007FF72B074C02]
+	(No symbol) [0x00007FF72AF25AEB]
+	(No symbol) [0x00007FF72AF5C512]
+	(No symbol) [0x00007FF72AF5B872]
+	(No symbol) [0x00007FF72AF55106]
+	(No symbol) [0x00007FF72AF521C8]
+	(No symbol) [0x00007FF72AF994B9]
+	(No symbol) [0x00007FF72AF8EE53]
+	(No symbol) [0x00007FF72AF5F514]
+	(No symbol) [0x00007FF72AF60631]
+	GetHandleVerifier [0x00007FF72B486CAD+3738973]
+	GetHandleVerifier [0x00007FF72B4DC506+4089270]
+	GetHandleVerifier [0x00007FF72B4D4823+4057299]
+	GetHandleVerifier [0x00007FF72B1A5C49+720121]
+	(No symbol) [0x00007FF72B08126F]
+	(No symbol) [0x00007FF72B07C304]
+	(No symbol) [0x00007FF72B07C432]
+	(No symbol) [0x00007FF72B06BD04]
+	BaseThreadInitThunk [0x00007FF9E5D7257D+29]
+	RtlUserThreadStart [0x00007FF9E7BCAA58+40]
+</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-28T15:35:30.444661" level="WARN">The chromedriver version (121.0.6167.85) detected in PATH at C:\Users\guilh\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.60); currently, chromedriver 123.0.6312.86 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
