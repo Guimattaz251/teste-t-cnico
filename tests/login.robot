@@ -14,3 +14,4 @@ CT01 - Teste proposto
     Selecionar Pim
     Procurar pelo id
     Verificar se o usuário é encontrado
+    Clicar no botão de apagar
